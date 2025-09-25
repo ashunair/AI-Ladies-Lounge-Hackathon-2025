@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MindBridge Design System - Mental Health Platform
+Professional, calming, trustworthy design for dual-sided platform
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core brand colors - warm purple/magenta inspired by community unity */
+    --primary: 310 75% 45%;
+    --primary-foreground: 340 30% 98%;
+    --primary-light: 310 65% 55%;
+    --primary-glow: 310 55% 70%;
+    
+    /* Trust and wellness colors - coral/orange warmth */
+    --wellness: 15 85% 60%;
+    --wellness-foreground: 340 30% 98%;
+    --wellness-light: 15 75% 70%;
+    
+    /* Warm, accessible neutrals */
+    --background: 210 20% 98%;
+    --foreground: 210 15% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 15%;
+    
+    --secondary: 210 30% 94%;
+    --secondary-foreground: 210 15% 15%;
+    
+    --muted: 210 25% 92%;
+    --muted-foreground: 215 15% 45%;
+    
+    --accent: 320 35% 92%;
+    --accent-foreground: 310 20% 20%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 215 25% 88%;
+    --input: 215 25% 88%;
+    --ring: 310 75% 45%;
+
+    --radius: 0.75rem;
+    
+    /* Beautiful gradients inspired by community unity */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness)), hsl(var(--wellness-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--wellness)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(320 25% 96%));
+    
+    /* Professional shadows with trust colors */
+    --shadow-soft: 0 4px 12px -2px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 8px 25px -5px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 15px 35px -8px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    
+    /* Smooth transitions for professional feel */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    --sidebar-background: 210 20% 98%;
+    --sidebar-foreground: 210 15% 25%;
+    --sidebar-primary: 310 75% 45%;
+    --sidebar-primary-foreground: 340 30% 98%;
+    --sidebar-accent: 320 25% 92%;
+    --sidebar-accent-foreground: 310 20% 25%;
+    --sidebar-border: 320 25% 88%;
+    --sidebar-ring: 310 75% 45%;
+  }
+
+  .dark {
+    --primary: 310 65% 70%;
+    --primary-foreground: 310 15% 15%;
+    --primary-light: 310 55% 80%;
+    --primary-glow: 310 45% 85%;
+    
+    --wellness: 15 75% 65%;
+    --wellness-foreground: 15 15% 15%;
+    --wellness-light: 15 65% 75%;
+    
+    --background: 210 15% 8%;
+    --foreground: 210 20% 95%;
+    
+    --card: 210 15% 10%;
+    --card-foreground: 210 20% 95%;
+    
+    --popover: 210 15% 10%;
+    --popover-foreground: 210 20% 95%;
+    
+    --secondary: 210 15% 15%;
+    --secondary-foreground: 210 20% 95%;
+    
+    --muted: 210 15% 18%;
+    --muted-foreground: 215 15% 65%;
+    
+    --accent: 320 15% 15%;
+    --accent-foreground: 320 20% 95%;
+    
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 310 65% 70%;
+    
+    --sidebar-background: 210 15% 8%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 310 65% 70%;
+    --sidebar-primary-foreground: 310 15% 15%;
+    --sidebar-accent: 320 15% 15%;
+    --sidebar-accent-foreground: 320 20% 85%;
+    --sidebar-border: 320 15% 20%;
+    --sidebar-ring: 310 65% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
